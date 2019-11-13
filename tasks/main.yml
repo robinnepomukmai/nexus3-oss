@@ -111,8 +111,6 @@
           vars:
             script_name: create_blobstores_from_list
             args: "{{ nexus_blobstores }}"
-          when: nexus_blobstores | length > 0
-
 
   when: nexus_run_provisionning | default(true) | bool
 
